@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    tools:context=".LoginUsingPhoneNumber">
+
+    <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white1">
+
+    </View>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white1"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="162dp"
+                    android:layout_height="203dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.558"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo" />
+
+            <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify your Number"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.547"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="245dp"
+                    android:layout_height="59dp"
+                    android:gravity="center"
+                    android:text="Please select Your Country And Enter Your Number"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView3"
+                    app:layout_constraintHorizontal_bias="0.514"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                    android:id="@+id/idEdtPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Enter Phone Number"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/ccp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/ccp"
+                    app:layout_constraintTop_toBottomOf="@+id/ccp" />
+
+            <Button
+                    android:id="@+id/idBtnGetOtp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:background="@drawable/btn_genrate"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Genrate OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white1"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/idEdtPhoneNumber"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/idEdtPhoneNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/idEdtPhoneNumber" />
+
+            <Button
+                    android:id="@+id/idBtnVerify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="53dp"
+                    android:layout_marginBottom="31dp"
+                    android:background="@drawable/btn_genrate"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Verify OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white1"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/idBtnGetOtp"
+                    app:layout_constraintStart_toStartOf="@+id/idBtnGetOtp"
+                    app:layout_constraintTop_toBottomOf="@+id/PinView" />
+
+            <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn_genrate"
+                    android:contextClickable="true"
+                    app:ccpDialog_backgroundColor="@color/white1"
+                    app:ccpDialog_fastScroller_bubbleColor="@color/white1"
+                    app:ccpDialog_fastScroller_handleColor="@color/white1"
+                    app:ccpDialog_textColor="@color/white1"
+                    app:ccp_arrowColor="@color/white1"
+                    app:ccp_contentColor="@color/white1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            </com.hbb20.CountryCodePicker>
+
+            <com.chaos.view.PinView
+                    android:id="@+id/PinView"
+                    android:layout_width="383dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="28dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollbarThumbHorizontal="@color/white"
+                    android:scrollbarThumbVertical="@color/white"
+                    android:scrollbarTrackHorizontal="@color/white"
+                    android:scrollbarTrackVertical="@color/white"
+                    android:shadowColor="@color/black"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                    app:cursorColor="#F3168B"
+                    app:itemCount="6"
+                    app:itemSpacing="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/idBtnGetOtp"
+                    app:layout_constraintHorizontal_bias="0.333"
+                    app:layout_constraintStart_toStartOf="@+id/idBtnGetOtp"
+                    app:layout_constraintTop_toBottomOf="@+id/idBtnGetOtp"
+                    app:lineColor="@color/purple_500"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+            </com.chaos.view.PinView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

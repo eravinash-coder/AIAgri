@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "451553196621",
+    "project_id": "aiagri-d887e",
+    "storage_bucket": "aiagri-d887e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451553196621:android:d55c6585e6eef6fa1ffa04",
+        "android_client_info": {
+          "package_name": "com.example.aiagri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451553196621-fbqu9t1jqnufrg7smvjum7pu9g865fnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9tJRJsYoBaBmLHfpPb7ybklX0NZqUTUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451553196621-fbqu9t1jqnufrg7smvjum7pu9g865fnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
